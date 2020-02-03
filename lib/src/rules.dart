@@ -2,6 +2,8 @@
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
+import 'package:linter/src/rules/testtesttest.dart';
+
 import 'analyzer.dart';
 import 'rules/always_declare_return_types.dart';
 import 'rules/always_put_control_body_on_new_line.dart';
@@ -311,6 +313,7 @@ void registerLintRules() {
     ..register(UnnecessaryConst())
     ..register(UnnecessaryFinal())
     ..register(UnnecessaryNew())
+    ..register(AUnnecessaryNew())
     ..register(UnnecessaryNullAwareAssignments())
     ..register(UnnecessaryNullInIfNullOperators())
     // Disabled pending fix: https://github.com/dart-lang/linter/issues/23
